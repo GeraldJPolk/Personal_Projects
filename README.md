@@ -1,2 +1,2 @@
 # Alpha-pository
-My first year of java codes.
+My personal projects w/ java codes.
