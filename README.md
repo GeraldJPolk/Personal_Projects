@@ -1,2 +1,2 @@
-# Personal Projects
-This is a list of my personal/school programming projects written in Java.
+# Personal/ School Projects
+This is a list of my personal/ school programming projects written in Java.
