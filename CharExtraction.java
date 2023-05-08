@@ -3,9 +3,9 @@ import java.util.*;
 /*
  * Author:        Gerald J. Polk   
  * Date:          02/09/2023   
- * Description:   A program that gathers prompted string info to 
- *                produce length between first occurances of two chosen characters.
- * C-Lang:        Java
+ * Description:   Gathers prompted string info to produce the length between 
+ *                the first occurances of the two chosen characters.
+ * Lang:          Java
  * 
  */
 public class CharExtraction {
@@ -16,8 +16,8 @@ public class CharExtraction {
       // Declare Variables
       String wrd;
       String sub;
-      char   bgnChr, endChr;
-      int    bgnInt, endInt;
+      char   begChr, endChr;
+      int    begInt, endInt;
    
       // Prompt & input word(s) w/ no spaces
       System.out.print("Enter a Word(s) (no spaces): ");
@@ -25,8 +25,8 @@ public class CharExtraction {
    
       // Prompt & input beginning char
       System.out.print("Enter beginning character: ");
-         bgnChr = console.next().charAt(0);
-         bgnInt = wrd.indexOf(bgnChr);
+         begChr = console.next().charAt(0);
+         begInt = wrd.indexOf(begChr);
    
       // Prompt & input ending char
       System.out.print("Enter ending character: ");
@@ -35,9 +35,11 @@ public class CharExtraction {
    
       // Display word(s), beginning/ending char's & position
       System.out.printf("%nFor the word(s) \"%s\" %n", wrd);
-      System.out.printf("\"%c\" is first located at position \"%d\"%n", bgnChr, bgnInt);                
+      
+      System.out.printf("\"%c\" is first located at position \"%d\"%n", begChr, begInt); 
+      
       System.out.printf("while \"%c\" is first located at position \"%d\"%n%n", endChr, endInt);
-         sub = wrd.substring(bgnInt, endInt);
+         sub = wrd.substring(begInt, endInt);
                   
       // Display length between beginning and ending char's
       System.out.printf("The substring \"%s%c\" has a length of \"%d\".", sub, endChr, sub.length());
