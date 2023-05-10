@@ -26,24 +26,25 @@ public class VolumeCal {
     System.out.print("Enter length in inches: ");
 			lIN = console.nextInt();
       
-	// Prompt for and input the Depth in inches
-      	System.out.print("Enter depth in inches: ");
-		dIN = console.nextInt();
+		// Prompt for and input the Depth in inches
+    System.out.print("Enter depth in inches: ");
+			dIN = console.nextInt();
       
-	// Convert Length, Width & Depth to ft
-	wFT = wIN / 12.0;
-	lFT = lIN / 12.0;
-	dFT = dIN / 12.0;
+		// Convert Length, Width & Depth to ft
+		wFT = wIN / 12.0;
+		lFT = lIN / 12.0;
+		dFT = dIN / 12.0;
 
-	// Calculate # of cuft & gallons per cuft
-  cuFT = wFT * lFT * dFT;
-	gal = cuFT * GAL_PERcuFT;
+		// Calculate # of cuft & gallons per cuft
+  	cuFT = wFT * lFT * dFT;
+		gal = cuFT * GAL_PERcuFT;
       
-	// Display volume in cuft
-  System.out.printf("The objects volume is %.2f cubic feet.%n", cuFT);
+		// Display volume in cuft
+  	System.out.printf("The objects volume is %.2f cubic feet.%n", cuFT);
 
-	// Display # of gallons
-  System.out.printf("That makes %.0f gallons.", gal);
-
+		// Display # of gallons
+  	System.out.printf("That makes %.0f gallons.", gal);
+		
+		System.out.println();
 	}
 }
