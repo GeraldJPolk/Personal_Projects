@@ -5,7 +5,6 @@ import java.util.*;
  * Date:          02/09/2023   
  * Description:   Gathers prompted string info to produce the length between 
  *                the first occurances of the two chosen characters.
- * Lang:          Java
  * 
  */
 public class CharExtraction {
